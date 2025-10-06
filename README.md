@@ -1,69 +1,123 @@
-# React + TypeScript + Vite
+# 🧩 Crossword Builder & Solver  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React + TypeScript** web app that lets you design and solve your own crossword puzzles — powered by **Tau-Prolog** in the browser (with a pure JS fallback).  
 
-Currently, two official plugins are available:
+Build, import, export, and auto-solve crosswords — right from your browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo  
+🚀 **Try it here:**  
+- **GitHub Pages:** https://<your-username>.github.io/crossword-app  
+- **Vercel (recommended):** https://crossword-app.vercel.app  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| 🧠 Smart Logic | 🧩 Grid Tools | 📤 Import & Export | 🧪 Testing |
+|----------------|---------------|--------------------|-------------|
+| Uses Tau-Prolog (logic programming) for solving | Click to toggle cells between open/blocked | Import or export `bin.txt` grid patterns | Built-in test cases for debugging |
+| Fallback to fast JS MRV (backtracking) solver | Auto-detects horizontal & vertical word slots | Export your grid as CSV or word list | Run consistency checks instantly |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🧱 Tech Stack  
+
+- ⚛️ **React + TypeScript** (Vite)
+- 🧮 **Tau-Prolog** UMD module  
+- 🎨 **Tailwind / Inline Styling**  
+- 💾 **Local file I/O** for `.txt` & `.csv`
+- 🧰 **Node + NPM** for build & dev
+
+---
+
+## 🧩 How to Run Locally  
+
+```bash
+# clone the repo
+git clone https://github.com/<your-username>/crossword-app.git
+cd crossword-app
+
+# install dependencies
+npm install
+
+# start dev server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open 👉 **http://localhost:5173**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ⚙️ Build for Production  
+
+```bash
+npm run build
+npm run preview
 ```
+
+This generates an optimized version of your app in the `dist/` folder.  
+You can deploy it to **GitHub Pages**, **Vercel**, or **Netlify**.
+
+---
+
+## 📁 Project Structure  
+
+```
+crossword-app/
+ ├── public/              # static assets
+ ├── src/                 # source code
+ │    ├── App.tsx         # main React component
+ │    ├── logic/          # Prolog + JS solver logic
+ │    └── styles/         # custom styles
+ ├── package.json
+ ├── vite.config.ts
+ └── README.md
+```
+
+---
+
+## 📸 Screenshots  
+
+| Grid Editor | Solved Puzzle | CSV Export |
+|:------------:|:--------------:|:-------------:|
+| ![Grid Editor](screenshots/grid.png) | ![Solved](screenshots/solved.png) | ![Export](screenshots/export.png) |
+
+*(add screenshots inside a `/screenshots` folder)*  
+
+---
+
+## 💡 Key Concepts  
+
+- **Constraint satisfaction:** words must match at crossing letters.  
+- **Logic programming:** Prolog enforces constraints declaratively.  
+- **Fallback solving:** a JS MRV (Minimum Remaining Values) solver ensures it works even offline.  
+
+---
+
+## 🧰 Scripts  
+
+| Command | Description |
+|----------|-------------|
+| `npm run dev` | Run development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+
+---
+
+## 👨‍💻 Author  
+
+**Hassan Sajid**  
+📍 Windsor, ON, Canada  
+🎓 Built as part of my learning in **React, Logic Programming, and Frontend Development**  
+
+
+---
+
+## 🪄 License  
+MIT License © 2025 Hassan Sajid 
+
+---
+
+⭐ **If you like this project, consider giving it a star!**  
