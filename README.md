@@ -80,11 +80,11 @@ crossword-app/
 
 ## 📸 Screenshots  
 
-| Grid Editor | Solved Puzzle | CSV Export |
-|:------------:|:--------------:|:-------------:|
-| ![Grid Editor](image.png) | ![Solved](screenshots/solved.png) | ![Export](screenshots/export.png) |
+| Full Webpage View | Unsolved Grid | Solved Grid |
+|:--------------:|:------------:|:-----------------:|
+| ![Full Webpage](main.png) | ![Unsolved Grid](image.png) | ![Solved Grid](solved.png) |
 
-*(add screenshots inside a `/screenshots` folder)*  
+> 🖼️ *All screenshots are stored inside the `/screenshots` folder for easy viewing.*
 
 ---
 
