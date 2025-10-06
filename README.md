@@ -8,8 +8,8 @@ Build, import, export, and auto-solve crosswords — right from your browser.
 
 ## 🌐 Live Demo  
 🚀 **Try it here:**  
-- **GitHub Pages:** https://<your-username>.github.io/crossword-app  
-- **Vercel (recommended):** https://crossword-app.vercel.app  
+- **GitHub Pages:** https://hassanawan7890.github.io/crossword/  
+
 
 ---
 
