@@ -82,7 +82,7 @@ crossword-app/
 
 | Grid Editor | Solved Puzzle | CSV Export |
 |:------------:|:--------------:|:-------------:|
-| ![Grid Editor](screenshots/grid.png) | ![Solved](screenshots/solved.png) | ![Export](screenshots/export.png) |
+| ![Grid Editor](image.png) | ![Solved](screenshots/solved.png) | ![Export](screenshots/export.png) |
 
 *(add screenshots inside a `/screenshots` folder)*  
 
